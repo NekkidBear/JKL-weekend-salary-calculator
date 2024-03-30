@@ -72,16 +72,28 @@ function updateMonthlyCost(salary) {
 
   //get footer location
   let footer = document.getElementById("footer");
+
+  //apply css if over budget
   if (totalMonthlyCost > 20000) {
     footer.classList.toggle("over-budget");
   }
 }
 
 /**
- * deleteEmployee deletes the selected employee row in the table
+ * deleteEmployee deletes the selected employee row in the table, and updates the total monthly costs
+ * as appropriate
  */
 function deleteEmployee(event) {
+    // get data and store it in variables
   let employeeToBeDeleted = event.target.parentNode.parentNode;
+  let monthlyCostToBeRemoved = Number(employeeToBeDeleted.dataset.monthlyCost);
+  
+  //confirm the data to delete
   console.log(employeeToBeDeleted);
+
+  //update Monthly cost
+  totalMonthlyCost -= monthlyCostToBeRemoved;
+  
+  //remove the selected employee
   employeeToBeDeleted.remove();
 }
