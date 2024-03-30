@@ -41,7 +41,7 @@ function addEmployee(event) {
                                 <td>${jobTitle}</td>
                                 <td>${annualSalary}</td>
                                 <td>${employeeMonthlyCost}</td>
-                                <td><button onclick="deleteEmployee(event)">Delete</button></td>
+                                <td><button onclick="deleteEmployee(event)">❌</button></td>
                             </tr>`;
 
   // update total monthly cost

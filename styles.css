@@ -1,35 +1,47 @@
-* {
-  background-color: lavender;
+body {
+  background-color: #98ffdb;
 }
+
 header {
-  background-color: aquamarine;
-  color: Purple;
-  
+  background-color: #a35fd3;
+  color: #f8f272;
 }
+
 table {
   table-layout: fixed;
   width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple
+  /* border-collapse: collapse; */
+  border: 3px solid purple;
 }
+
+thead {
+  background-color: #a35fd3;
+  color: #f8f272;
+  text-align: center;
+  width: auto;
+}
+
+thead th:nth-child(7){
+  width: 10%;
+} 
 footer {
   display: flex;
   justify-content: space-between;
-  
 }
 
-#footer-text{
+#footer-text {
   float: left;
-  flex-grow: .5;
+  flex-grow: 0.5;
 }
 
 #monthlyCost {
   float: right;
-  flex-grow: .5;
+  flex-grow: 0.5;
   text-align: center;
 }
 .over-budget {
-  color: red;
+  background-color: #ffa07a;
+  color: #d2042d;
   font-weight: bold;
   font-size: larger;
 }
