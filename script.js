@@ -4,11 +4,11 @@ console.log("Javascript works!");
 //declare global variable for total cost since all employees' salaries are included.
 let totalMonthlyCost = 0;
 
-/** submit takes in the form data, stores it in variables, and then creates a new
+/** addEmployee takes in the form data, stores it in variables, and then creates a new
  * table row in the DOM with the data. It calls updateMonthlyCost and passes in the annual salary data.
  * Finally it clears the inputs so a new row can be typed.
  */
-function submit(event) {
+function addEnployee(event) {
   //prevent legacy default form behavior
   event.preventDefault();
 
