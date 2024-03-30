@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>  
-<title>Salary Calculator</title>
-</head>
-<body>
-  <header>
-    <h1>Salary Calculator</h1>
-  </header>
-  <main>
-    <section id="employeeForm">
-      <h2>Add Employee</h2>
-          <form id="getEmployeeData">
-            <input data-testid="firstNameInput" 
-              id="firstName"
-              placeholder="First Name"
-              type="text">
-            <input data-testid="lastNameInput" 
-              id="lastName"
-              placeholder="Last Name"
-              type="text">
-            <input  data-testid="idInput"
-              id="employeeID"
-              placeholder="Employee ID Number"
-              type="text">
-            <input data-testid="titleInput"
-              id="jobTitle"
-              placeholder="Job Title"
-              type="text">
-            <input data-testid="annualSalaryInput"
-              id="annualSalary"
-              placeholder="Annual Salary"
-              type="text">
-            <button onclick="submit(event)" data-testid="submitButton">Add Employee</button>
-          </form>
-    </section>
-    <section id="salaryTable">
-      <h2>Employees</h2>
-      <table>
-        <thead id="tableHeader">
-          <tr>
-            <td>First Name></td>
-            <td>Last Name</td>
-            <td>Employee ID</td>
-            <td>Job Title</td>
-            <td>Annual Salary</td>
-          </tr>
-        </thead>
-        <tbody id="tableBody">
-        </tbody>
-      </table>
-    </section>
-  </main>
-  <footer id="footer">
-    <p>Total Monthly Payroll</p>
-    <span id="monthlyCost"></span>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Salary Calculator</h1>
+    </header>
+    <main>
+      <section id="employeeForm">
+        <h2>Add Employee</h2>
+        <form id="getEmployeeData">
+          <input
+            data-testid="firstNameInput"
+            id="firstName"
+            placeholder="First Name"
+            type="text"
+          />
+          <input
+            data-testid="lastNameInput"
+            id="lastName"
+            placeholder="Last Name"
+            type="text"
+          />
+          <input
+            data-testid="idInput"
+            id="employeeID"
+            placeholder="Employee ID Number"
+            type="text"
+          />
+          <input
+            data-testid="titleInput"
+            id="jobTitle"
+            placeholder="Job Title"
+            type="text"
+          />
+          <input
+            data-testid="annualSalaryInput"
+            id="annualSalary"
+            placeholder="Annual Salary"
+            type="text"
+          />
+          <button onclick="submit(event)" data-testid="submitButton">
+            Submit
+          </button>
+        </form>
+      </section>
+      <section id="salaryTable">
+        <h2>Employees</h2>
+        <table>
+          <thead id="tableHeader">
+            <tr>
+              <td>First Name></td>
+              <td>Last Name</td>
+              <td>Employee ID</td>
+              <td>Job Title</td>
+              <td>Annual Salary</td>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>Total Monthly Payroll</p>
+      <span id="monthlyCost"></span>
+    </footer>
+  </body>
 </html>
