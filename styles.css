@@ -1,15 +1,32 @@
+* {
+  background-color: lavender;
+}
+header {
+  background-color: aquamarine;
+  color: Purple;
+  
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple
+}
 footer {
   display: flex;
   justify-content: space-between;
+  
 }
 
 #footer-text{
   float: left;
+  flex-grow: .5;
 }
 
 #monthlyCost {
-  position: relative;
   float: right;
+  flex-grow: .5;
+  text-align: center;
 }
 .over-budget {
   color: red;
