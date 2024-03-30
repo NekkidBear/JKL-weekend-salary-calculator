@@ -11,26 +11,41 @@
     <h1>Salary Calculator</h1>
   </header>
   <main>
-    <h2>Add Employee</h2>
-        <form id="getEmployeeData">
-          <input id ="firstName"
-            type="text"
-            placeholder="First Name">
-          <input id ="lastName"
-            type="text"
-            placeholder="Last Name">
-          <input id ="employeeID"
-            type="text"
-            placeholder="Employee ID Number">
-          <input id ="jobTitle"
-            type="text"
-            placeholder="Job Title">
-          <input id ="annualSalary"
-            type="text"
-            placeholder="Annual Salary">
-          <button onclick="addEmployee()">Add Employee</button>
-        </form>
-    <h2>Employees</h2>
+    <section id="employeeForm">
+      <h2>Add Employee</h2>
+          <form id="getEmployeeData">
+            <input id ="firstName"
+              type="text"
+              placeholder="First Name">
+            <input id ="lastName"
+              type="text"
+              placeholder="Last Name">
+            <input id ="employeeID"
+              type="text"
+              placeholder="Employee ID Number">
+            <input id ="jobTitle"
+              type="text"
+              placeholder="Job Title">
+            <input id ="annualSalary"
+              type="text"
+              placeholder="Annual Salary">
+            <button onclick="addEmployee()">Add Employee</button>
+          </form>
+    </section>
+    <section id="salaryTable">
+      <h2>Employees</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Employee ID</td>
+            <td>Job Title</td>
+            <td>Annual Salary</td>
+          </tr>
+        </thead>
+      </table>
+    </section>
   </main>
   <footer>
     <p>Total Monthly</p>
