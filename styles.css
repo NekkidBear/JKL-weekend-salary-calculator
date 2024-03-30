@@ -10,7 +10,7 @@ header {
 table {
   table-layout: fixed;
   width: 100%;
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
   border: 3px solid purple;
 }
 
@@ -21,9 +21,38 @@ thead {
   width: auto;
 }
 
-thead th:nth-child(7){
+thead th:nth-child(7) {
   width: 10%;
-} 
+}
+
+tbody tr td{
+  border: 1.5px solid purple;
+  padding-left: 5px;
+}
+
+tbody tr td:nth-child(4){
+  text-align:center;
+}
+
+tbody tr td:nth-child(5){
+  text-align: end;
+}
+
+tbody tr td:nth-child(6){
+  text-align: end;
+}
+
+tbody tr td:nth-child(7){
+  text-align: center;
+}
+
+tbody tr:nth-child(even){
+  background-color: lavender;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #98ffdb;
+}
 footer {
   display: flex;
   justify-content: space-between;
