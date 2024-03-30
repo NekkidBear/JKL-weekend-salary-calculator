@@ -31,13 +31,13 @@ function addEmployee(event) {
   let tableBody = document.getElementById("tableBody");
 
   // add a new table row with the input
-  tableBody.innerHTML += `<tr>
+  tableBody.innerHTML += `<tr class="employee">
                                 <td>${firstName}</td>
                                 <td>${lastName}</td>
                                 <td>${employeeID}</td>
                                 <td>${jobTitle}</td>
                                 <td>${annualSalary}</td>
-                                <td><button onclick="deleteEmployee(event)">Delete"</button></td>
+                                <td><button onclick="deleteEmployee(event)">Delete</button></td>
                             </tr>`;
 
   // update total monthly cost
@@ -71,4 +71,13 @@ function updateMonthlyCost(salary) {
   if (totalMonthlyCost > 20000) {
     footer.classList.toggle("over-budget");
   }
+}
+
+/**
+ * deleteEmployee deletes the selected employee row in the table
+ */
+function deleteEmployee(event) {
+  let employeeToBeDeleted = event.target.parentNode.parentNode;
+  console.log(employeeToBeDeleted);
+  employeeToBeDeleted.remove();
 }
