@@ -1,4 +1,7 @@
-over-budget {
+#monthlyCost {
+    position:relative;
+}
+.over-budget {
     color: red;
     font-weight: bold;
     font-size: larger;
