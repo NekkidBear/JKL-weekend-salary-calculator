@@ -1,6 +1,9 @@
 //confirm javascript is sourced correctly
 console.log("Javascript works!");
 
+//declare global variable for total cost since all employees' salaries are included.
+let totalMonthlyCost = 0
+
 /** submit takes in the form data, stores it in variables, and then creates a new
  * table row in the DOM with the data. It calls updateMonthlyCost and passes in the annual salary data.
  * Finally it clears the inputs so a new row can be typed.
@@ -48,6 +51,26 @@ function submit(event) {
   document.getElementById("annualSalary").innerText = "";
 }
 
+
+/**
+ * updateMonthlyCost takes the salary argument passed from the submit function
+ * and recalculates it based on the new employee entered.
+ */
 function updateMonthlyCost(salary) {
-  //...
+    //divide the annual cost by the number of months in the year
+    let monthlyCost = Number(salary)/12;
+    
+    //update total costs
+    totalMonthlyCost  += monthlyCost;
+
+    //display updated cost in DOM
+    let monthlyCostLocation = document.getElementById("monthlyCost");
+    monthlyCostLocation.innerText = totalMonthlyCost;
+    
+    //get footer location
+    let footer = document.getElementById("footer");
+    if(totalMonthlyCost>20000){
+        footer.classList.toggle("over-budget");
+    }
+
 }
