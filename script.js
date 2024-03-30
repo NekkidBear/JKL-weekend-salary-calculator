@@ -8,7 +8,7 @@ let totalMonthlyCost = 0;
  * table row in the DOM with the data. It calls updateMonthlyCost and passes in the annual salary data.
  * Finally it clears the inputs so a new row can be typed.
  */
-function addEnployee(event) {
+function addEmployee(event) {
   //prevent legacy default form behavior
   event.preventDefault();
 
@@ -43,11 +43,11 @@ function addEnployee(event) {
   updateMonthlyCost(annualSalary);
 
   // clear inputs
-  document.getElementById("firstNameInput").innerText = "";
-  document.getElementById("lastName").innerText = "";
-  document.getElementById("employeeID").innerText = "";
-  document.getElementById("jobTitle").innerText = "";
-  document.getElementById("annualSalary").innerText = "";
+  document.getElementById("firstName").value = "";
+  document.getElementById("lastName").value = "";
+  document.getElementById("employeeID").value = "";
+  document.getElementById("jobTitle").value = "";
+  document.getElementById("annualSalary").valueß = "";
 }
 
 /**
