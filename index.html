@@ -14,22 +14,22 @@
     <section id="employeeForm">
       <h2>Add Employee</h2>
           <form id="getEmployeeData">
-            <input id ="firstName"
+            <input data-testid="firstNameInput"
               type="text"
               placeholder="First Name">
-            <input id ="lastName"
+            <input data-testid="lastNameInput"
               type="text"
               placeholder="Last Name">
-            <input id ="employeeID"
+            <input  data-testid="idInput"
               type="text"
               placeholder="Employee ID Number">
-            <input id ="jobTitle"
+            <input data-testid="titleInput"
               type="text"
               placeholder="Job Title">
-            <input id ="annualSalary"
+            <input data-testid="annualSalaryInput"
               type="text"
               placeholder="Annual Salary">
-            <button onclick="addEmployee()">Add Employee</button>
+            <button onclick="addEmployee()" data-testid="submitButton">Add Employee</button>
           </form>
     </section>
     <section id="salaryTable">
@@ -37,7 +37,7 @@
       <table>
         <thead id="tableHeader">
           <tr>
-            <td>First Name</td>
+            <td>First Name></td>
             <td>Last Name</td>
             <td>Employee ID</td>
             <td>Job Title</td>
