@@ -18,13 +18,16 @@ function addEmployee(event) {
   let employeeID = document.getElementById("employeeID").value;
   let jobTitle = document.getElementById("jobTitle").value;
   let annualSalary = document.getElementById("annualSalary").value;
+  let employeeMonthlyCost = Math.floor(Number(annualSalary)/12);
+
   console.log(
     "data entered: ",
     firstName,
     lastName,
     employeeID,
     jobTitle,
-    annualSalary
+    annualSalary,
+    employeeMonthlyCost
   );
 
   // select the table body
@@ -37,6 +40,7 @@ function addEmployee(event) {
                                 <td>${employeeID}</td>
                                 <td>${jobTitle}</td>
                                 <td>${annualSalary}</td>
+                                <td>${employeeMonthlyCost}</td>
                                 <td><button onclick="deleteEmployee(event)">Delete</button></td>
                             </tr>`;
 
