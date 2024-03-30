@@ -60,12 +60,12 @@ footer {
 
 #footer-text {
   float: left;
-  flex-grow: 0.5;
+  flex-grow: 0.70;
 }
 
 #monthlyCost {
   float: right;
-  flex-grow: 0.5;
+  flex-grow: 0.30;
   text-align: center;
 }
 .over-budget {

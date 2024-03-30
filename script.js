@@ -68,7 +68,7 @@ function updateMonthlyCost(salary) {
 
   //display updated cost in DOM
   let monthlyCostLocation = document.getElementById("monthlyCost");
-  monthlyCostLocation.innerText = totalMonthlyCost;
+  monthlyCostLocation.innerText = Math.round(totalMonthlyCost);
 
   //get footer location
   let footer = document.getElementById("footer");
