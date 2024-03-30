@@ -1,8 +1,18 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-text{
+  float: left;
+}
+
 #monthlyCost {
-    position:relative;
+  position: relative;
+  float: right;
 }
 .over-budget {
-    color: red;
-    font-weight: bold;
-    font-size: larger;
+  color: red;
+  font-weight: bold;
+  font-size: larger;
 }
