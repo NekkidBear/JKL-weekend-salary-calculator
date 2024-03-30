@@ -37,6 +37,7 @@ function addEmployee(event) {
                                 <td>${employeeID}</td>
                                 <td>${jobTitle}</td>
                                 <td>${annualSalary}</td>
+                                <td><button onclick="deleteEmployee(event)">Delete"</button></td>
                             </tr>`;
 
   // update total monthly cost
@@ -47,7 +48,7 @@ function addEmployee(event) {
   document.getElementById("lastName").value = "";
   document.getElementById("employeeID").value = "";
   document.getElementById("jobTitle").value = "";
-  document.getElementById("annualSalary").valueß = "";
+  document.getElementById("annualSalary").value = "";
 }
 
 /**
