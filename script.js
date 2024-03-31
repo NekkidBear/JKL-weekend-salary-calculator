@@ -86,13 +86,9 @@ function updateMonthlyCost(salary) {
 function deleteEmployee(event) {
     // get data and store it in variables
   let employeeToBeDeleted = event.target.parentNode.parentNode;
-  let monthlyCostToBeRemoved = Number(employeeToBeDeleted.dataset.monthlyCost);
-  
+
   //confirm the data to delete
   console.log(employeeToBeDeleted);
-
-  //update Monthly cost
-  totalMonthlyCost -= monthlyCostToBeRemoved;
   
   //remove the selected employee
   employeeToBeDeleted.remove();
